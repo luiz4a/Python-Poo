@@ -29,10 +29,6 @@ class Engenheiro (Funcionario):
 class Medico (Funcionario):     
     def __init__(self, nome: str, telefone: str, email: str, endereco: Endereco, crm: str) -> None:
         self.crm = crm 
+medico = Medico("Marta", "20657687","marta@senai.com", Endereco("Av.pajussara",  "44 ", "Em Frente a padaria saraiva", "54715366", "Salvador-BA"), "7676867", )
 
-
-
-
-aluno1 = Aluno ("Marta",20, Endereço("Av.pajussara", 44))
-
-print(aluno1.exibir_dados())
+print(medico.exibir_dados())
